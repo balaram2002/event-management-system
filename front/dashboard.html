@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard | Event Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="initDashboard()">
+
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <p id="roleText"></p>
+
+    <!-- ORGANIZER OPTIONS -->
+    <div id="organizerSection" style="display:none;">
+        <h3>Organizer Actions</h3>
+        <button onclick="goToCreateEvent()">Create Event</button>
+        <button onclick="goToCreateTicket()">Create Ticket</button>
+        <button onclick="goToOrganizerDashboard()">View Dashboard</button>
+    </div>
+
+    <!-- USER OPTIONS -->
+    <div id="userSection" style="display:none;">
+        <h3>User Actions</h3>
+        <button onclick="goToEvents()">View Events</button>
+        <button onclick="goToBookTicket()">Book Ticket</button>
+        <button onclick="goToFeedback()">Give Feedback</button>
+    </div>
+
+    <br>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

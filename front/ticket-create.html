@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Ticket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadOrganizerEvents()">
+
+<div class="container">
+    <h2>Create Ticket</h2>
+
+    <select id="eventSelect">
+        <option value="">Select Event</option>
+    </select>
+
+    <input type="text" id="typeName" placeholder="Ticket Type (VIP / Regular)" required>
+    <input type="number" id="price" placeholder="Price" required>
+    <input type="number" id="quantity" placeholder="Total Quantity" required>
+
+    <button onclick="createTicket()">Create Ticket</button>
+    <br><br>
+    <button onclick="navigateTo('dashboard.html')">Back</button>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/ticket.js"></script>
+</body>
+</html>

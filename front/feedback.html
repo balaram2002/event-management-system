@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadEventsForFeedback()">
+
+<div class="container">
+    <h2>Submit Feedback</h2>
+
+    <select id="eventSelect">
+        <option value="">Select Event</option>
+    </select>
+
+    <textarea id="comment"
+              placeholder="Write your feedback..."
+              rows="4"></textarea>
+
+    <button onclick="submitFeedback()">Submit</button>
+    <br><br>
+    <button onclick="navigateTo('dashboard.html')">Back</button>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/feedback.js"></script>
+</body>
+</html>

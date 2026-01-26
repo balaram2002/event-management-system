@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Ticket</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadTickets()">
+
+<div class="container">
+    <h2>Book Ticket</h2>
+
+    <select id="ticketSelect">
+        <option value="">Select Ticket Type</option>
+    </select>
+
+    <input type="number" id="quantity" placeholder="Quantity" required>
+
+    <button onclick="bookTicket()">Book Ticket</button>
+    <br><br>
+    <button onclick="navigateTo('event-list.html')">Back</button>
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/registration.js"></script>
+</body>
+</html>
