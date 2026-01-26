@@ -1,4 +1,4 @@
-function createEvent() {
+function submitCreateEvent() {
 
     const eventData = {
         title: document.getElementById("title").value,

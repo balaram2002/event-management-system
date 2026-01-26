@@ -85,6 +85,7 @@ public class EventServiceImpl implements EventService {
                 event.getTitle(),
                 event.getLocation(),
                 event.getEventDate(),
+                event.getEventTime(),
                 organizerDTO
         );
     }
