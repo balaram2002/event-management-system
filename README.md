@@ -29,7 +29,7 @@ The system focuses on simplifying event planning, ticket booking, and user engag
 - CSS3  
 - JavaScript (ES6)
 
-### Backend *(planned / in progress)*
+### Backend 
 - Java  
 - Spring Boot  
 - REST APIs  
