@@ -129,6 +129,33 @@ a:hover {
     color: #666;
 }
 
+/* Password Toggle */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 18px;
+    transition: var(--transition);
+    user-select: none;
+}
+
+.toggle-eye:hover {
+    color: var(--secondary-color);
+    transform: scale(1.1);
+}
+
 /* Animations */
 @keyframes fadeIn {
     from {

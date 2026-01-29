@@ -1,5 +1,20 @@
 const BASE_URL = "http://localhost:9091";
 
+function togglePassword() {
+    const passwordInput = document.getElementById("password");
+    const toggleIcon = document.querySelector(".toggle-eye");
+    
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.classList.remove("fa-eye");
+        toggleIcon.classList.add("fa-eye-slash");
+    } else {
+        passwordInput.type = "password";
+        toggleIcon.classList.remove("fa-eye-slash");
+        toggleIcon.classList.add("fa-eye");
+    }
+}
+
 function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
